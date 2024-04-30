@@ -17,7 +17,7 @@ img{
     height: auto;
 }
 
-.banner, .sponsors, .collection-area{
+.banner, .sponsors, .collection-area, .featured{
     width: 80%;
     margin: 100px auto;
 }
@@ -107,16 +107,43 @@ img{
     color: orange;
 }
 
+/* featured area styles  */
+.featured{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.featured-image{
+    width: 40%;
+}
+.featured-content{
+    width: 50%;
+}
+.featured-title{
+    color: #0A0826;
+    font-size: 38px;
+    font-weight: 600;
+}
+.featured-description{
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 16px 0;
+
+}
+
 /* responsive area start  */
 @media screen and (max-width: 576px) {
-    .banner{
+    .banner, .featured{
         flex-direction: column-reverse;
     }
-    .banner-content, .banner-image{
+    .banner-content, .banner-image, .featured-image, .featured-content{
         width: 100%;
         text-align: center;
     }
     .collections{
         grid-template-columns: 1fr;
     }
+    
 }
