@@ -132,6 +132,33 @@ img{
     margin: 16px 0;
 
 }
+/* footer area styles  */
+footer{
+    background-color: #0A0826;
+    padding: 50px 0;d
+    text-align: center;
+}
+.footer-title{
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 600;
+}
+.footer-description{
+    color: #D9DBE1;
+    font-size: 14px;
+    font-weight: 600;
+}
+.social-links ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 15px;
+    color: #F0F0F0;
+}
+.social-links li i{
+    cursor: pointer;
+}
 
 /* responsive area start  */
 @media screen and (max-width: 576px) {
